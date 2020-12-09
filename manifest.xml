@@ -4,7 +4,7 @@
         Use "Connect IQ: Edit Application" from the Visual Studio Code command palette
         to update the application attributes.
     -->
-    <iq:application id="c08ae2bb-0eeb-400c-bb2e-f1a16846ce3d" type="watch-app" name="@Strings.AppName" entry="connectIQHealthAppApp" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="3.2.0">
+    <iq:application id="c08ae2bb-0eeb-400c-bb2e-f1a16846ce3d" type="watch-app" name="@Strings.AppName" entry="connectIQHealthApp" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="3.2.0">
 
         <!--
             Use the following from the Visual Studio Code comand palette to edit
@@ -14,6 +14,7 @@
             "Connect IQ: Edit Products" - Lets you add or remove any product
         -->
         <iq:products>
+              <iq:product id="fr245m"/>
         </iq:products>
 
         <!--
@@ -21,6 +22,9 @@
             palette to update permissions.
         -->
         <iq:permissions>
+            <iq:uses-permission id="Sensor"/>
+            <iq:uses-permission id="Communications"/>
+             <iq:uses-permission id="Positioning"/>
         </iq:permissions>
 
         <!--

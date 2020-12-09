@@ -17,7 +17,7 @@ class connectIQHealthApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-        return [ new connectIQHealthAppView(), new connectIQHealthAppDelegate() ];
+        return [ new connectIQHealthAppView()];
     }
 
 }
