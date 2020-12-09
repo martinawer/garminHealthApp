@@ -84,8 +84,8 @@ class connectIQHealthAppView extends WatchUi.View {
             "battery" => battery.toNumber(),
             "isCharging" => isCharging,
         };
-
-        var authToken = "<your Authorization Token if needed>";
+        //insert auth Token if needed
+        var authToken = "<authToken>";
 
         var headers = {
             "Content-Type" => Communications.REQUEST_CONTENT_TYPE_JSON,
@@ -126,7 +126,6 @@ class connectIQHealthAppView extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc) {
-        // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
     }
 
